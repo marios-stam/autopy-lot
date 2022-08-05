@@ -4,24 +4,25 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.6.0
+      format_version: '1.3'
+      jupytext_version: 1.14.1
   kernelspec:
-    display_name: Python 3
+    display_name: Python 3.8.10 64-bit
+    language: python
     name: python3
 ---
 
-<!-- #region id="VS_EDvAXXlCq" colab_type="text" -->
-# Initialization
+<!-- #region colab_type="text" id="VS_EDvAXXlCq" -->
+# Initialization Marios Stamatoppoulos
 <!-- #endregion -->
 
-```python id="erUvXpQHXntK" colab_type="code" outputId="90803cc5-5a16-43ad-eaf8-6c74b1a003f2" colab={"base_uri": "https://localhost:8080/", "height": 35}
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="erUvXpQHXntK" outputId="90803cc5-5a16-43ad-eaf8-6c74b1a003f2"
 from google.colab import drive
 drive.mount('/gdrive')
 import matplotlib.pyplot as plt
 ```
 
-<!-- #region id="ZhUvOQAI5Tl3" colab_type="text" -->
+<!-- #region colab_type="text" id="ZhUvOQAI5Tl3" -->
 # Boyer Moore Algorithm | Good Suffix heuristic
 **DESCRIPTION**
 
@@ -32,7 +33,7 @@ In computer science, the Boyer–Moore string-search algorithm is an efficient s
 The Boyer–Moore algorithm as presented in the original paper has worst-case running time of **`O(n+m)`** only if the pattern does not appear in the text. **`here we gurantee that the patterns always exist, so it never reach the worst case scenario `**
 <!-- #endregion -->
 
-```python id="FKI3rL-x7ol7" colab_type="code" colab={}
+```python colab={} colab_type="code" id="FKI3rL-x7ol7"
 # Python3 program for Boyer Moore Algorithm with 
 # Good Suffix heuristic to find pattern in 
 # given text string 
@@ -126,11 +127,11 @@ def BMPsearch_good(pat, text):
   return pos
 ```
 
-<!-- #region id="x1U1Flj-YCmW" colab_type="text" -->
+<!-- #region colab_type="text" id="x1U1Flj-YCmW" -->
 # Necessary Functions
 <!-- #endregion -->
 
-```python id="8YN97agpYGx9" colab_type="code" colab={}
+```python colab={} colab_type="code" id="8YN97agpYGx9"
 from collections import OrderedDict
 
 ########################################################################
@@ -400,413 +401,413 @@ def helper_function_5(path,len):
       
 ```
 
-<!-- #region id="YVpYbNbfY_OS" colab_type="text" -->
+<!-- #region colab_type="text" id="YVpYbNbfY_OS" -->
 # DJ1
 <!-- #endregion -->
 
-<!-- #region id="Xk8Jw23Wjz5p" colab_type="text" -->
+<!-- #region colab_type="text" id="Xk8Jw23Wjz5p" -->
 ## Unique Patterns
 Finding All the unique patterns in each file seperately
 <!-- #endregion -->
 
-<!-- #region id="6wdXMOlLZIuZ" colab_type="text" -->
+<!-- #region colab_type="text" id="6wdXMOlLZIuZ" -->
 ### Find Unique Patterns in all the files with pattern length 3
 <!-- #endregion -->
 
-```python id="LL0XGo27ZWjt" colab_type="code" outputId="7f8b759f-e501-4d8d-c1d0-162c0facea2e" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="LL0XGo27ZWjt" outputId="7f8b759f-e501-4d8d-c1d0-162c0facea2e"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',3)
 ```
 
-<!-- #region id="gA3MRUNAb_oG" colab_type="text" -->
+<!-- #region colab_type="text" id="gA3MRUNAb_oG" -->
 ### Find Unique Patterns in all the files with pattern length 4
 <!-- #endregion -->
 
-```python id="XWJAERp-cDw-" colab_type="code" outputId="b09d9588-7e41-4558-cb8b-273242f49578" colab={"base_uri": "https://localhost:8080/", "height": 403}
+```python colab={"base_uri": "https://localhost:8080/", "height": 403} colab_type="code" id="XWJAERp-cDw-" outputId="b09d9588-7e41-4558-cb8b-273242f49578"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',4)
 ```
 
-<!-- #region id="0SUEeDCkcT3m" colab_type="text" -->
+<!-- #region colab_type="text" id="0SUEeDCkcT3m" -->
 ### Find Unique Patterns in all the files with pattern length 5
 <!-- #endregion -->
 
-```python id="1tTsh866cbVo" colab_type="code" outputId="196f3414-8ddb-42d5-97c8-5ec6ae7bbd79" colab={"base_uri": "https://localhost:8080/", "height": 403}
+```python colab={"base_uri": "https://localhost:8080/", "height": 403} colab_type="code" id="1tTsh866cbVo" outputId="196f3414-8ddb-42d5-97c8-5ec6ae7bbd79"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',5)
 ```
 
-<!-- #region id="ahITbF36dgpY" colab_type="text" -->
+<!-- #region colab_type="text" id="ahITbF36dgpY" -->
 ### Find Unique Patterns in all the files with pattern length 6
 <!-- #endregion -->
 
-```python id="837t20qddjEP" colab_type="code" outputId="c8aea9c2-4375-44a8-868e-08ad161ec36a" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="837t20qddjEP" outputId="c8aea9c2-4375-44a8-868e-08ad161ec36a"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',6)
 ```
 
-<!-- #region id="KHS3CK0vdrfr" colab_type="text" -->
+<!-- #region colab_type="text" id="KHS3CK0vdrfr" -->
 ### Find Unique Patterns in all the files with pattern length 7
 <!-- #endregion -->
 
-```python id="dXl_rwLfdt1-" colab_type="code" outputId="4bfb416e-79b0-4605-8506-6c2aeb6d88c8" colab={"base_uri": "https://localhost:8080/", "height": 403}
+```python colab={"base_uri": "https://localhost:8080/", "height": 403} colab_type="code" id="dXl_rwLfdt1-" outputId="4bfb416e-79b0-4605-8506-6c2aeb6d88c8"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',7)
 ```
 
-<!-- #region id="88LILsoxdz10" colab_type="text" -->
+<!-- #region colab_type="text" id="88LILsoxdz10" -->
 ### Find Unique Patterns in all the files with pattern length 8
 <!-- #endregion -->
 
-```python id="mi5CoVd0d3wf" colab_type="code" outputId="08c2f8fa-b4d7-4515-b82c-7f9d106969e6" colab={"base_uri": "https://localhost:8080/", "height": 403}
+```python colab={"base_uri": "https://localhost:8080/", "height": 403} colab_type="code" id="mi5CoVd0d3wf" outputId="08c2f8fa-b4d7-4515-b82c-7f9d106969e6"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',8)
 ```
 
-<!-- #region id="uQC9Zq5bkCv0" colab_type="text" -->
+<!-- #region colab_type="text" id="uQC9Zq5bkCv0" -->
 ## Common Patterns
 Finding those patterns that exist in all the files
 <!-- #endregion -->
 
-<!-- #region id="09V0atLPgksh" colab_type="text" -->
+<!-- #region colab_type="text" id="09V0atLPgksh" -->
 ### Find common Unique Patterns considering all the files with pattern length 3
 <!-- #endregion -->
 
-```python id="z57V6ZYDgtM9" colab_type="code" outputId="40fe8658-6bd6-41ab-f7d0-a56e072cf8a5" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="z57V6ZYDgtM9" outputId="40fe8658-6bd6-41ab-f7d0-a56e072cf8a5"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',3)
 ```
 
-<!-- #region id="LvVR78SzhwQR" colab_type="text" -->
+<!-- #region colab_type="text" id="LvVR78SzhwQR" -->
 ### Find common Unique Patterns considering all the files with pattern length 4
 <!-- #endregion -->
 
-```python id="78I3rcW9kHCA" colab_type="code" outputId="3e89e843-bf84-442d-ed9f-a6b4cb351c57" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="78I3rcW9kHCA" outputId="3e89e843-bf84-442d-ed9f-a6b4cb351c57"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',4)
 ```
 
-<!-- #region id="Wvu9uJ3Tqon9" colab_type="text" -->
+<!-- #region colab_type="text" id="Wvu9uJ3Tqon9" -->
 ### Find common Unique Patterns considering all the files with pattern length 5
 <!-- #endregion -->
 
-```python id="OOe8TFLZqp-8" colab_type="code" outputId="dca44c02-4063-4211-c2b0-51a00d122805" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="OOe8TFLZqp-8" outputId="dca44c02-4063-4211-c2b0-51a00d122805"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',5)
 ```
 
-<!-- #region id="jKsq8WQbqwCu" colab_type="text" -->
+<!-- #region colab_type="text" id="jKsq8WQbqwCu" -->
 ### Find common Unique Patterns considering all the files with pattern length 6
 <!-- #endregion -->
 
-```python id="AU0yoEiJqy1m" colab_type="code" outputId="06048ab7-152f-491e-ebe0-385458ceabb0" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="AU0yoEiJqy1m" outputId="06048ab7-152f-491e-ebe0-385458ceabb0"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',6)
 ```
 
-<!-- #region id="ArEMGMRushAW" colab_type="text" -->
+<!-- #region colab_type="text" id="ArEMGMRushAW" -->
 ## Find common locs for each patterns with pattern length 3
 
 
 
 <!-- #endregion -->
 
-```python id="RG1vawhxsoqm" colab_type="code" outputId="ff2562bf-5881-4e5c-d649-6d383f7cc0d7" colab={"base_uri": "https://localhost:8080/", "height": 0}
+```python colab={"base_uri": "https://localhost:8080/", "height": 0} colab_type="code" id="RG1vawhxsoqm" outputId="ff2562bf-5881-4e5c-d649-6d383f7cc0d7"
 patterns = ['481', '351', '665', '618', '282', '135', '486', '531', '456', '211', '861', '518', '182', '727', '165', '473', '858', '575', '628', '686', '785', '646', '388', '281', '818', '355', '218', '521', '347', '574', '848', '464', '474', '687', '555', '745', '827', '244', '223', '832', '268', '213', '528', '732', '234', '114', '556', '834', '174', '854', '747', '432', '253', '621', '241', '175', '316', '851', '326', '868', '233', '338', '152', '768', '385', '212', '722', '128', '145', '471', '155', '718', '438', '526', '568', '215', '484', '251', '844', '421', '482', '546', '846', '127', '257', '553', '815', '644', '178', '283', '513', '334', '847', '144', '864', '512', '535', '744', '757', '455', '751', '151', '874', '124', '855', '448', '538', '713', '833', '317', '715', '511', '278', '884', '341', '377', '812', '136', '814', '141', '651', '761', '352', '748', '515', '332', '113', '134', '252', '554', '871', '231', '224', '671', '272', '758', '572', '321', '784', '162', '585', '881', '578', '173', '824', '371', '123', '728', '514', '866', '483', '172', '273', '117', '228', '147', '516', '878', '417', '657', '187', '721', '445', '132', '148', '841', '457', '284', '345', '581', '787', '485', '831', '111', '122', '271', '571', '558', '467', '525', '586', '138', '717', '451', '867', '116', '887', '886', '524', '771', '752', '741', '738', '154', '583', '587', '412', '711', '431', '852', '875', '743', '788', '112', '478', '443', '853', '885', '458', '527', '288', '131', '828', '811', '588', '314', '888', '248', '221', '311', '648', '411', '227', '437', '146', '845', '315', '714', '137', '684', '216', '627', '625', '872', '863', '821', '285', '214', '688', '725', '121', '611', '816', '415', '125', '161', '468', '381', '883', '348', '736', '517', '181', '547', '115', '186', '331', '873', '188', '541']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1')
 ```
 
-<!-- #region id="2_NXeuLmtLgW" colab_type="text" -->
+<!-- #region colab_type="text" id="2_NXeuLmtLgW" -->
 ## Find common locs for each patterns with pattern length 4
 <!-- #endregion -->
 
-```python id="dRio4xJgtNCU" colab_type="code" outputId="6e98c88a-cd64-42dd-9354-a3393e52a6d7" colab={"base_uri": "https://localhost:8080/", "height": 237}
+```python colab={"base_uri": "https://localhost:8080/", "height": 237} colab_type="code" id="dRio4xJgtNCU" outputId="6e98c88a-cd64-42dd-9354-a3393e52a6d7"
 patterns = ['8751', '7888', '8788', '8514', '8711', '8511', '4788', '2888', '8878', '8848', '8288', '8881']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1')
 ```
 
-<!-- #region id="uR3AjmHYvRRe" colab_type="text" -->
+<!-- #region colab_type="text" id="uR3AjmHYvRRe" -->
 ## Codon distribution
 Prints the number of occurence of each codon in every file
 <!-- #endregion -->
 
-```python id="gM0x75rZvVFB" colab_type="code" outputId="51ffb184-4d2b-46c2-b9a9-6af71ed2c546" colab={"base_uri": "https://localhost:8080/", "height": 403}
+```python colab={"base_uri": "https://localhost:8080/", "height": 403} colab_type="code" id="gM0x75rZvVFB" outputId="51ffb184-4d2b-46c2-b9a9-6af71ed2c546"
 helper_function_3('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1')
 ```
 
-<!-- #region id="M8FAORkO-Qgw" colab_type="text" -->
+<!-- #region colab_type="text" id="M8FAORkO-Qgw" -->
 ## Plot codon Distribution 
 <!-- #endregion -->
 
-```python id="hP_8CFZ_-VVc" colab_type="code" outputId="16e81737-d1af-4654-f2c5-fcf1c02e6c75" colab={"base_uri": "https://localhost:8080/", "height": 1000}
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="hP_8CFZ_-VVc" outputId="16e81737-d1af-4654-f2c5-fcf1c02e6c75"
 helper_function_4('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',1)
 ```
 
-<!-- #region id="mkZ3J5DNA8kY" colab_type="text" -->
+<!-- #region colab_type="text" id="mkZ3J5DNA8kY" -->
 ## Percentage of each codon
 <!-- #endregion -->
 
-```python id="ivu4-sJTBAyJ" colab_type="code" outputId="c740e2d6-7e82-4bc0-9ee3-4809e6b50bc6" colab={"base_uri": "https://localhost:8080/", "height": 1000}
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="ivu4-sJTBAyJ" outputId="c740e2d6-7e82-4bc0-9ee3-4809e6b50bc6"
 helper_function_5('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_DJ1',1)
 ```
 
-<!-- #region id="VGm3cV_dFYqC" colab_type="text" -->
+<!-- #region colab_type="text" id="VGm3cV_dFYqC" -->
 # PARKIN
 <!-- #endregion -->
 
-<!-- #region id="by_XIo-jFl-y" colab_type="text" -->
+<!-- #region colab_type="text" id="by_XIo-jFl-y" -->
 ## Unique patterns
 
 <!-- #endregion -->
 
-<!-- #region id="sErRrVFJFePB" colab_type="text" -->
+<!-- #region colab_type="text" id="sErRrVFJFePB" -->
 ### Finding unique patterns with pattern length 3
 <!-- #endregion -->
 
-```python id="0ZFBx8-jFu0E" colab_type="code" outputId="9c0b96b3-34be-4ff1-83e4-cce89ee7b57b" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="0ZFBx8-jFu0E" outputId="9c0b96b3-34be-4ff1-83e4-cce89ee7b57b"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',3)
 ```
 
-<!-- #region id="nk_jZ9uiF5fG" colab_type="text" -->
+<!-- #region colab_type="text" id="nk_jZ9uiF5fG" -->
 ### Finding unique patterns with pattern length 4
 <!-- #endregion -->
 
-```python id="l-U2jwtpF9ZX" colab_type="code" outputId="e20d85e9-386d-41f2-c28e-4961de90c9e5" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="l-U2jwtpF9ZX" outputId="e20d85e9-386d-41f2-c28e-4961de90c9e5"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',4)
 ```
 
-```python id="9TLLf7P_F_US" colab_type="code" colab={}
+```python colab={} colab_type="code" id="9TLLf7P_F_US"
 
 ```
 
-<!-- #region id="5sDG_CYuGBRd" colab_type="text" -->
+<!-- #region colab_type="text" id="5sDG_CYuGBRd" -->
 ### Finding qnique patterns with pattern length 5
 <!-- #endregion -->
 
-```python id="hF8NG_c8GGFS" colab_type="code" outputId="540936b9-7bae-40fd-977b-5368e1852be0" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="hF8NG_c8GGFS" outputId="540936b9-7bae-40fd-977b-5368e1852be0"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',5)
 ```
 
-<!-- #region id="Zi7moBzTGKbM" colab_type="text" -->
+<!-- #region colab_type="text" id="Zi7moBzTGKbM" -->
 ### Finding unique patterns with pattern length 6
 <!-- #endregion -->
 
-```python id="m-8C1K4kGQQT" colab_type="code" outputId="61bee587-10ca-4b01-8377-27ff1192d990" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="m-8C1K4kGQQT" outputId="61bee587-10ca-4b01-8377-27ff1192d990"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',6)
 ```
 
-<!-- #region id="undRW7SNGTcH" colab_type="text" -->
+<!-- #region colab_type="text" id="undRW7SNGTcH" -->
 ### Finding uniuqe patterns with pattern length 7
 <!-- #endregion -->
 
-```python id="3IBNwFuOGYxi" colab_type="code" outputId="2a0a78bf-b63e-4484-d935-fda8407bea64" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="3IBNwFuOGYxi" outputId="2a0a78bf-b63e-4484-d935-fda8407bea64"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',7)
 ```
 
-<!-- #region id="L-kNe6qnGnO9" colab_type="text" -->
+<!-- #region colab_type="text" id="L-kNe6qnGnO9" -->
 ### Finding unique patterns with pattern length 8
 <!-- #endregion -->
 
-```python id="UMZIdsnpGsmc" colab_type="code" outputId="9fc59733-70ba-485e-fbae-984804c2f00f" colab={"base_uri": "https://localhost:8080/", "height": 917}
+```python colab={"base_uri": "https://localhost:8080/", "height": 917} colab_type="code" id="UMZIdsnpGsmc" outputId="9fc59733-70ba-485e-fbae-984804c2f00f"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',8)
 ```
 
-<!-- #region id="BwjyAJt9GyBw" colab_type="text" -->
+<!-- #region colab_type="text" id="BwjyAJt9GyBw" -->
 ## Common patterns
 <!-- #endregion -->
 
-<!-- #region id="hq6Ey4tLG9sz" colab_type="text" -->
+<!-- #region colab_type="text" id="hq6Ey4tLG9sz" -->
 ### Finding common patterns with pattern length 3
 <!-- #endregion -->
 
-```python id="6z0alVcTHBmL" colab_type="code" outputId="bc4966c3-8f5e-47b7-fc76-1ed965df5fe6" colab={"base_uri": "https://localhost:8080/", "height": 55}
+```python colab={"base_uri": "https://localhost:8080/", "height": 55} colab_type="code" id="6z0alVcTHBmL" outputId="bc4966c3-8f5e-47b7-fc76-1ed965df5fe6"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',3)
 ```
 
-<!-- #region id="YTTLaNCWHMJ7" colab_type="text" -->
+<!-- #region colab_type="text" id="YTTLaNCWHMJ7" -->
 ### Finding common patterns with pattern length 4
 <!-- #endregion -->
 
-```python id="iF7LFTItHP5k" colab_type="code" outputId="8c39c5a5-f1f9-4038-de1a-66d1a6895fe0" colab={"base_uri": "https://localhost:8080/", "height": 35}
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="iF7LFTItHP5k" outputId="8c39c5a5-f1f9-4038-de1a-66d1a6895fe0"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',4)
 ```
 
-<!-- #region id="I_Tp8TZuHVrt" colab_type="text" -->
+<!-- #region colab_type="text" id="I_Tp8TZuHVrt" -->
 ### Finding common patterns with pattern length 5
 <!-- #endregion -->
 
-```python id="UNjaY8NpHZtt" colab_type="code" outputId="e1eab1f6-783b-45b9-ec03-fe17e9fdb4ff" colab={"base_uri": "https://localhost:8080/", "height": 35}
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="UNjaY8NpHZtt" outputId="e1eab1f6-783b-45b9-ec03-fe17e9fdb4ff"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',5)
 ```
 
-<!-- #region id="2qInfXXrHj6f" colab_type="text" -->
+<!-- #region colab_type="text" id="2qInfXXrHj6f" -->
 ## Common locs
 <!-- #endregion -->
 
-<!-- #region id="w2oIvQYDHnBD" colab_type="text" -->
+<!-- #region colab_type="text" id="w2oIvQYDHnBD" -->
 ### common locs with pattern length 3
 <!-- #endregion -->
 
-```python id="gyqSdWfmHriO" colab_type="code" outputId="96b9bc62-84e9-4019-a4b6-b4b7a9d621be" colab={"base_uri": "https://localhost:8080/", "height": 1000}
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="gyqSdWfmHriO" outputId="96b9bc62-84e9-4019-a4b6-b4b7a9d621be"
 patterns = ['112', '832', '376', '513', '137', '541', '572', '458', '355', '148', '531', '251', '477', '411', '447', '518', '847', '431', '747', '732', '871', '852', '244', '317', '184', '124', '225', '343', '571', '185', '417', '472', '165', '131', '113', '351', '711', '728', '478', '551', '613', '858', '881', '282', '733', '751', '887', '628', '714', '126', '451', '511', '212', '466', '727', '527', '324', '768', '813', '854', '334', '285', '311', '161', '515', '611', '586', '187', '154', '145', '116', '284', '415', '514', '861', '588', '125', '771', '753', '261', '715', '153', '778', '535', '115', '532', '182', '422', '814', '766', '557', '127', '773', '152', '157', '648', '287', '128', '133', '246', '467', '874', '812', '512', '517', '173', '833', '312', '834', '475', '883', '338', '181', '853', '314', '151', '228', '363', '224', '177', '147', '888', '481', '878', '357', '215', '841', '585', '428', '371', '272', '111', '327', '114', '558', '785', '122', '281', '135', '141', '713', '781', '818', '288', '388', '525', '655', '718', '271']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN')
 ```
 
-<!-- #region id="QCGF3eDs0Nt-" colab_type="text" -->
+<!-- #region colab_type="text" id="QCGF3eDs0Nt-" -->
 ### common locs of length 4
 <!-- #endregion -->
 
-```python id="bAsB1moa0RL1" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 109} outputId="c98315dc-1070-4a20-e195-a553df75158a"
+```python colab={"base_uri": "https://localhost:8080/", "height": 109} colab_type="code" id="bAsB1moa0RL1" outputId="c98315dc-1070-4a20-e195-a553df75158a"
 patterns = ['3111', '1113', '7858', '1125', '8181']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN')
 ```
 
-<!-- #region id="qKKn174u1nwL" colab_type="text" -->
+<!-- #region colab_type="text" id="qKKn174u1nwL" -->
 ## codon distribution
 
 <!-- #endregion -->
 
-```python id="xzCr0QDl1q26" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 937} outputId="d5ccc112-4cf9-4d0f-813a-edb72d210822"
+```python colab={"base_uri": "https://localhost:8080/", "height": 937} colab_type="code" id="xzCr0QDl1q26" outputId="d5ccc112-4cf9-4d0f-813a-edb72d210822"
 helper_function_3('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN')
 ```
 
-<!-- #region id="zoOsJH9u16dX" colab_type="text" -->
+<!-- #region colab_type="text" id="zoOsJH9u16dX" -->
 ## plot codon distribution
 <!-- #endregion -->
 
-```python id="vUlU7QEC19Iy" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 1000} outputId="c5633ceb-19e7-44eb-f321-9911bb5a9e38"
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="vUlU7QEC19Iy" outputId="c5633ceb-19e7-44eb-f321-9911bb5a9e38"
 helper_function_4('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',1)
 ```
 
-<!-- #region id="UqMgWh232NkG" colab_type="text" -->
+<!-- #region colab_type="text" id="UqMgWh232NkG" -->
 ## percentage of each codon
 <!-- #endregion -->
 
-```python id="UXQq8GW52QaG" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 1000} outputId="cd792b68-6167-4d5b-cc8f-501a5ee992a3"
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="UXQq8GW52QaG" outputId="cd792b68-6167-4d5b-cc8f-501a5ee992a3"
 helper_function_5('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PARKIN',1)
 ```
 
-<!-- #region id="6J-h86vy4OB_" colab_type="text" -->
+<!-- #region colab_type="text" id="6J-h86vy4OB_" -->
 # PINK1
 <!-- #endregion -->
 
-<!-- #region id="9ykmg5Ut4ZQ0" colab_type="text" -->
+<!-- #region colab_type="text" id="9ykmg5Ut4ZQ0" -->
 ## Unique patterns
 <!-- #endregion -->
 
-<!-- #region id="RNACcfJo4bY7" colab_type="text" -->
+<!-- #region colab_type="text" id="RNACcfJo4bY7" -->
 ### Finding unique patterns og length 3
 <!-- #endregion -->
 
-```python id="GLS6gvT94fjw" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="ddc8e463-4303-45cf-8124-64c6c537372b"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="GLS6gvT94fjw" outputId="ddc8e463-4303-45cf-8124-64c6c537372b"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',3)
 ```
 
-<!-- #region id="2vtWGjNi4sWO" colab_type="text" -->
+<!-- #region colab_type="text" id="2vtWGjNi4sWO" -->
 ### Finding unique patternns of  length 4
 <!-- #endregion -->
 
-```python id="zJ1gs3n-4vrN" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="ad1b5e6f-6c95-49c3-d26c-47e5cff3440f"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="zJ1gs3n-4vrN" outputId="ad1b5e6f-6c95-49c3-d26c-47e5cff3440f"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',4)
 ```
 
-<!-- #region id="6OaiixAC4zID" colab_type="text" -->
+<!-- #region colab_type="text" id="6OaiixAC4zID" -->
 ### Finding unique patterns of length 5
 <!-- #endregion -->
 
-```python id="cEjei6LN42f_" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="6ee81dcc-860a-4fc2-a024-6023fb2825af"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="cEjei6LN42f_" outputId="6ee81dcc-860a-4fc2-a024-6023fb2825af"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',5)
 ```
 
-<!-- #region id="E7fOhCV947hE" colab_type="text" -->
+<!-- #region colab_type="text" id="E7fOhCV947hE" -->
 ###  Finding unique patterns of length 6
 <!-- #endregion -->
 
-```python id="DewM4T3n4-15" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="36ee3332-1fd0-4554-b5cb-53a17e6f066b"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="DewM4T3n4-15" outputId="36ee3332-1fd0-4554-b5cb-53a17e6f066b"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',6)
 ```
 
-<!-- #region id="7lw94Vh75Dcj" colab_type="text" -->
+<!-- #region colab_type="text" id="7lw94Vh75Dcj" -->
 ### Finding unique patterns of length 7
 <!-- #endregion -->
 
-```python id="actEkNb45I-g" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="39e30eb7-0d7a-4cc2-b326-d14046b95033"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="actEkNb45I-g" outputId="39e30eb7-0d7a-4cc2-b326-d14046b95033"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',7)
 ```
 
-<!-- #region id="vXjdV8q05Qzs" colab_type="text" -->
+<!-- #region colab_type="text" id="vXjdV8q05Qzs" -->
 ### finding unique patterns of length of 8
 <!-- #endregion -->
 
-```python id="-12CcNsP5Vis" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="1ec4e8ee-f885-484e-d668-cf219126418d"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="-12CcNsP5Vis" outputId="1ec4e8ee-f885-484e-d668-cf219126418d"
 helper_funtion('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',8)
 ```
 
-<!-- #region id="56z-A5kq5n-Z" colab_type="text" -->
+<!-- #region colab_type="text" id="56z-A5kq5n-Z" -->
 ## common patterns
 <!-- #endregion -->
 
-<!-- #region id="1Skcx3C85t2j" colab_type="text" -->
+<!-- #region colab_type="text" id="1Skcx3C85t2j" -->
 ### Common patterns of length 3
 <!-- #endregion -->
 
-```python id="YCSCIdNe5wzT" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 55} outputId="ea84f849-3adb-41e9-f1b1-11981fd801d9"
+```python colab={"base_uri": "https://localhost:8080/", "height": 55} colab_type="code" id="YCSCIdNe5wzT" outputId="ea84f849-3adb-41e9-f1b1-11981fd801d9"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',3)
 ```
 
-<!-- #region id="3cgwW1YS56gR" colab_type="text" -->
+<!-- #region colab_type="text" id="3cgwW1YS56gR" -->
 ### common patterns of length 4
 <!-- #endregion -->
 
-```python id="5zFnz-i259cO" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 35} outputId="0628be76-e798-43c6-84b6-4831538720d5"
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="5zFnz-i259cO" outputId="0628be76-e798-43c6-84b6-4831538720d5"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',4)
 ```
 
-<!-- #region id="oXOR0RmA6DWv" colab_type="text" -->
+<!-- #region colab_type="text" id="oXOR0RmA6DWv" -->
 ### common patterns of length 5
 <!-- #endregion -->
 
-```python id="iD1Oe9B96GZS" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 35} outputId="8a259836-b147-49d9-f6dd-e8ece949abf9"
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="iD1Oe9B96GZS" outputId="8a259836-b147-49d9-f6dd-e8ece949abf9"
 helper_function_2('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',5)
 ```
 
-<!-- #region id="TcsJlles6N9H" colab_type="text" -->
+<!-- #region colab_type="text" id="TcsJlles6N9H" -->
 ## Common locs
 <!-- #endregion -->
 
-<!-- #region id="pwB3kNAn6Siw" colab_type="text" -->
+<!-- #region colab_type="text" id="pwB3kNAn6Siw" -->
 ### common locs with pattern length 3
 <!-- #endregion -->
 
-```python id="5RNzrt4_6Vyy" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 1000} outputId="990c4ab6-8f79-482f-94dc-612b9fbed769"
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="5RNzrt4_6Vyy" outputId="990c4ab6-8f79-482f-94dc-612b9fbed769"
 patterns = ['111', '728', '571', '533', '715', '858', '871', '134', '612', '215', '475', '178', '428', '317', '787', '228', '347', '355', '225', '733', '887', '127', '271', '513', '881', '861', '143', '281', '581', '572', '115', '152', '541', '731', '851', '645', '278', '246', '746', '527', '145', '588', '882', '518', '485', '711', '261', '414', '727', '282', '716', '751', '146', '481', '784', '785', '886', '363', '244', '874', '532', '684', '713', '722', '732', '768', '114', '767', '818', '585', '883', '841', '147', '137', '153', '847', '154', '781', '477', '448', '165', '131', '854', '514', '311', '157', '515', '371', '838', '214', '287', '888', '312', '431', '417', '141', '224', '388', '736', '125', '112', '187', '274', '454', '653', '273', '382', '868', '878', '286', '458', '148', '438', '212', '447', '837', '135', '177', '747', '628', '384', '631', '284', '834', '512', '221', '753', '272', '478', '525', '551', '124', '251', '162', '116', '555', '188', '472', '778', '173', '714']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1')
 ```
 
-<!-- #region id="l52-5uA26otN" colab_type="text" -->
+<!-- #region colab_type="text" id="l52-5uA26otN" -->
 ### common locs with patterns length 4
 <!-- #endregion -->
 
-```python id="SMvLouFZ6tSb" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 35} outputId="faace1e3-72df-4c08-baa9-5e86cd923e12"
+```python colab={"base_uri": "https://localhost:8080/", "height": 35} colab_type="code" id="SMvLouFZ6tSb" outputId="faace1e3-72df-4c08-baa9-5e86cd923e12"
 patterns = ['8883']
 common_loc_pattern(patterns,'/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1')
 ```
 
-<!-- #region id="iu5LZi4V7D4Y" colab_type="text" -->
+<!-- #region colab_type="text" id="iu5LZi4V7D4Y" -->
 ## codon distribution
 <!-- #endregion -->
 
-```python id="h5LEfiAb7Gab" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 531} outputId="d6c5a3bc-16d9-4642-c18c-d09e354fae94"
+```python colab={"base_uri": "https://localhost:8080/", "height": 531} colab_type="code" id="h5LEfiAb7Gab" outputId="d6c5a3bc-16d9-4642-c18c-d09e354fae94"
 helper_function_3('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1')
 ```
 
-<!-- #region id="c2upZkBM7ORR" colab_type="text" -->
+<!-- #region colab_type="text" id="c2upZkBM7ORR" -->
 ## Plot codon distribution
 <!-- #endregion -->
 
-```python id="Rx2piH6j7QrO" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 1000} outputId="7e0bbef4-9c92-469b-ebed-86d40bdcc61b"
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="Rx2piH6j7QrO" outputId="7e0bbef4-9c92-469b-ebed-86d40bdcc61b"
 helper_function_4('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',1)
 ```
 
-<!-- #region id="YHdWwhds7bHu" colab_type="text" -->
+<!-- #region colab_type="text" id="YHdWwhds7bHu" -->
 ## percentage of each codon
 <!-- #endregion -->
 
-```python id="NZKM3ROf7dfO" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 1000} outputId="707c4b34-7561-48f0-c75e-a6aa6f3ef8dc"
+```python colab={"base_uri": "https://localhost:8080/", "height": 1000} colab_type="code" id="NZKM3ROf7dfO" outputId="707c4b34-7561-48f0-c75e-a6aa6f3ef8dc"
 helper_function_5('/gdrive/My Drive/Genomics/job/data/Output_RYNUM/RYNUM_output_RY_PINK1',1)
 ```
 
-<!-- #region id="zgeCiQbm7-KZ" colab_type="text" -->
+<!-- #region colab_type="text" id="zgeCiQbm7-KZ" -->
 # CONCLUSION
 could not find any common pattern at same location for 3 of the hub genes
 <!-- #endregion -->
